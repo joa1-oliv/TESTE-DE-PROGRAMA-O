@@ -1,42 +1,67 @@
 ============================== versão 1 ====================================
 import tkinter
-from tkinter import messagebox 
+from tkinter import messagebox
+import tkinter as tk
 
 root = tkinter.Tk()
 root.withdraw()
 count = 0
-msg_box01 = messagebox.showwarning("Atenção","SEU COMPUTADOR FOI HACKEADO    \nSEUS DADOS ESTAO SENDO COPIADOS")
+cont02 = 0
+msg_box01 = messagebox.showwarning("Atenção", "SEU COMPUTADOR FOI HACKEADO    \nSEUS DADOS ESTAO SENDO COPIADOS")
 
-msg_box02 = messagebox.showinfo("Info","Brincadeira, você tem uma mensagem. . .")
-msg_box03 = messagebox.askquestion("Responda","Deseja ler suas notificações ?")
+msg_box02 = messagebox.showinfo("Info", "Brincadeira, você tem uma mensagem. . .")
+msg_box03 = messagebox.askquestion("Responda", "Deseja ler suas notificações ?")
 while (True):
     if (msg_box03 == "yes"):
-        msg_box04 = messagebox.showinfo("Info","Seu namorado quer dizer que\nque te ama de mais e. . .")
-        msg_box05 = messagebox.askquestion("Pergunta","aceita passar o resto da sua vida comigo?")
+        msg_box04 = messagebox.showinfo("Info", "Seu namorado quer dizer que\nque te ama de mais e. . .")
+        msg_box05 = messagebox.askquestion("Pergunta", "aceita passar o resto da sua vida comigo?")
 
-
-
-      
         if (msg_box05 == "yes"):
-            msg_box06 = messagebox.showwarning("Alegria","Agora é só ser feliz gatinha")
+            msg_box06 = messagebox.showwarning("Alegria", "Agora é só ser feliz gatinha")
+            janela = tk.Tk()
+            janela.geometry("500x750")
+            texto_widget = tk.Label(janela, text="venho aqui para fazer testes")
+            texto_widget.pack()
+            janela.mainloop()
+
+
             break
         else:
-            msg_box07 = messagebox.showerror("ERROR404","Resposta errada")
+            msg_box07 = messagebox.showerror("ERROR404", "Resposta errada")
             count += 1
             if (count == 3):
-                msg_box08 = messagebox.showinfo("Aviso","Tudo Bem, eu vou superar")
+                msg_box08 = messagebox.showinfo("Aviso", "Tudo Bem, eu vou superar")
                 break
-            
 
 
 
 
     else:
-        msg_box09 = messagebox.askquestion("Confirmação","Certeza que não quer ler ?")
+        msg_box03 = messagebox.askquestion("Responda", "Deseja ler suas notificações ?")
+        msg_box09 = messagebox.askquestion("Confirmação", "Certeza que não quer ler ?")
         if (msg_box09 == "yes"):
-            msg_box10 = messagebox.showwarning("Despedida","Quando você cai você quem é quem. . .")
-            break       
+            msg_box10 = messagebox.showwarning("Despedida", "Quando você cai você quem é quem. . .")
+            break
         else:
-            msg_box11 = messagebox.showwarning("Atenção","Boa escolha. . .")
-            continue
+            if (msg_box03 == "yes"):
+        msg_box077 = messagebox.showinfo("Info", "Seu namorado quer dizer que\nque te ama de mais e. . .")
+        msg_box78 = messagebox.askquestion("Pergunta", "aceita passar o resto da sua vida comigo?")
+
+        if (msg_box78 == "yes"):
+            msg_box26 = messagebox.showwarning("Alegria", "Agora é só ser feliz gatinha")
+            janela = tk.Tk()
+            janela.geometry("500x750")
+            texto_widget = tk.Label(
+                janela, text="venho aqui para fazer testes")
+            texto_widget.pack()
+            janela.mainloop()
+
+            break
+        else:
+            msg_box07 = messagebox.showerror("ERROR404", "Resposta errada")
+            count += 1
+            if (count == 3):
+                msg_box08 = messagebox.showinfo("Aviso", "Tudo Bem, eu vou superar")
+                break
+
 =======================================================================================================================
