@@ -13,6 +13,9 @@ while (True):
     if (msg_box03 == "yes"):
         msg_box04 = messagebox.showinfo("Info","Seu namorado quer dizer que\nque te ama de mais e. . .")
         msg_box05 = messagebox.askquestion("Pergunta","aceita passar o resto da sua vida comigo?")
+
+
+
       
         if (msg_box05 == "yes"):
             msg_box06 = messagebox.showwarning("Alegria","Agora é só ser feliz gatinha")
@@ -23,12 +26,15 @@ while (True):
             if (count == 3):
                 msg_box08 = messagebox.showinfo("Aviso","Tudo Bem, eu vou superar")
                 break
-            else:
-                continue
+            
+
+
+
+
     else:
         msg_box09 = messagebox.askquestion("Confirmação","Certeza que não quer ler ?")
         if (msg_box09 == "yes"):
-            msg_box10 = messagebox.showwarning("Despedida","Quando você cai você quem é quem")
+            msg_box10 = messagebox.showwarning("Despedida","Quando você cai você quem é quem. . .")
             break       
         else:
             msg_box11 = messagebox.showwarning("Atenção","Boa escolha. . .")
