@@ -1,0 +1,66 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class TesteMaior {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); 
+        Random rand = new Random();
+        
+        System.out.println("escolha entre 0 e 1");
+        System.out.println("escolha :");
+        
+        int number = scanner.nextInt();
+
+        if (number == 1){
+            while (true){
+                System.out.println("vamos jogar 21");
+                Thread.sleep(1000);
+                
+                int userPoint = 0;
+                int MachinePoint = 0;
+
+                System.out.println("quer jogar (sim)");
+                System.out.println("sair (nao) :");
+                String answer = scanner.nextLine();
+
+                if (answer == "sim"){
+                    System.out.println("you have" + userPoint + "points");
+
+
+                    while (true){
+                        System.out.println("you have" + userPoint + "points, want a card?(yes)");
+                        String user = scanner.nextLine();
+                        int valorAleatorio = rand.nextInt(22);
+
+                        if (user == "yes"){
+                            int aleatorio = rand.nextInt(2);
+                            
+
+
+                            userPoint = userPoint + 
+                        }
+
+                        
+
+                    }
+                    
+
+                } else{
+                    System.out.println("Ate logo...");
+                    break;
+
+                }
+
+
+                break;
+            }
+        
+
+        scanner.close();
+
+
+
+    }
+    
+}
+ 
